@@ -42,7 +42,7 @@ module.exports.raHms2Deg = function(ra, round) {
   }
   var sDeg = (s / 240)
   if (round) sDeg = Math.floor(sDeg)
-  deg = (h * 15) + (m / 4) + sDeg
+  var deg = (h * 15) + (m / 4) + sDeg
   return deg * sign
 }
 
